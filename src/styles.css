@@ -7,7 +7,7 @@ body {
 ::selection {
     color: #D1C8AE;
     background: #4E2A32;
-  }
+}
 
 .login-div {
     margin: auto;
@@ -56,8 +56,9 @@ body {
     transition: 0.2s ease-in;
 }
 
-.fields:hover{
-    color: #FFF4D4;;
+.fields:hover {
+    color: #FFF4D4;
+    ;
 }
 
 .username, .password, .email, .confirmpassword, .date, .number {
@@ -102,14 +103,14 @@ body {
     background: #15131d;
     box-shadow: 12px 12px 24px #0d0c12, -12px -12px 24px #1d1a28;
     font-size: 21px;
-    text-shadow:0px 0px 15px #f3e1a9
+    text-shadow: 0px 0px 15px #f3e1a9
 }
 
 .signin-button:active {
     border-radius: 53px;
     background: #15131d;
     box-shadow: inset 13px 13px 29px #0d0c12, inset -13px -13px 29px #1d1a28;
-    text-shadow:0px 0px 0px #f3e1a9
+    text-shadow: 0px 0px 0px #f3e1a9
 }
 
 .link {
@@ -126,7 +127,7 @@ body {
     transition: 0.2s ease-in;
 }
 
-.link a:hover{
+.link a:hover {
     color: #FFF4D4;
 }
 
@@ -136,3 +137,4 @@ body {
     margin-top: 24px;
     color: #DF7932;
 }
+
