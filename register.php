@@ -58,12 +58,33 @@
             </form>
         </div>
         <div class="link">
-            <a href="login.php">Login</a> or <a href="main.php">Return home</a>
+            <a href="login.php">Login</a> or <a href="home.html">Return home</a>
+        </div>
+        <div class="error">
+            <?php
+             if (isset($_GET["error"])) {
+                if (($_GET["error"]) == "emptyinput") {
+                    echo "<p class=\"errormssg\">Please Fill in all fields!</p>";
+                } else if (($_GET["error"]) == "invalidusername") {
+                    echo "<p class=\"errormssg\">Please input a valid username.</p>";
+                } else if (($_GET["error"]) == "invalidemail") {
+                    echo "<p class=\"errormssg\">Please input a valid email.</p>";
+                }  else if (($_GET["error"]) == "passwordsfail") {
+                    echo "<p class=\"errormssg\">Error: passwords do not match</p>";
+                } else if (($_GET["error"]) == "usernametaken") {
+                    echo "<p class=\"errormssg\">Username or email taken</p>";
+                } else if (($_GET["error"]) == "stmtfailed") {
+                    echo "<p class=\"errormssg\">Error: Something went <strong>wrong</strong>.</p>";
+                } else if (($_GET["error"]) == "none") {
+                    echo "<p class=\"errormssg\">You have succesfully signed up!</p>";
+                }
+            }
+            ?>
         </div>
     </div>
     
 
-    <script src="" async defer></script>
+    
 </body>
 
 </html>

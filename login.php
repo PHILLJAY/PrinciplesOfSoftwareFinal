@@ -47,6 +47,18 @@
             </form>
         </div>
     </div>
+    <div class="error">
+        <?php
+        if (isset($_GET["error"])) {
+            if (($_GET["error"]) == "emptyinput") {
+                echo "<p class=\"errormssg\">Please Fill in all fields!</p>";
+            } else if (($_GET["error"]) == "wronglogin") {
+                echo "<p class=\"errormssg\">Please input a valid username/email and password.</p>";
+            } else if (($_GET["error"]) == "logout") {
+                echo "<p class=\"errormssg\">Logged out succesfully!.</p>";
+            }
+        }
+        ?>
     </div>
 
     <script src="" async defer></script>
