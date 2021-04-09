@@ -76,7 +76,7 @@
                 } else if (($_GET["error"]) == "stmtfailed") {
                     echo "<p class=\"errormssg\">Error: Something went <strong>wrong</strong>.</p>";
                 } else if (($_GET["error"]) == "none") {
-                    echo "<p class=\"errormssg\">You have succesfully signed up!</p>";
+                    echo "<p class=\"errormssg\">You have succesfully signed up!, please <a href=\"login.php\">login</a>!</p>";
                 }
             }
             ?>

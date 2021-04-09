@@ -49,7 +49,7 @@ function userExists($db, $username, $email)
     $sql = "SELECT * FROM users WHERE Username = ? OR EmailAddress = ?;";
     $stmt = mysqli_stmt_init($db);
     if (!mysqli_stmt_prepare($stmt, $sql)) {
-        header("location: ../../registration.php?error=stmtfailed");
+        header("location: ../../register.php?error=stmtfailed");
         exit();
     }
 
@@ -71,7 +71,7 @@ function createUser($db, $username, $email, $password_1)
     $sql = "INSERT INTO users (Username, Password, EmailAddress) VALUES (?,?,?);";
     $stmt = mysqli_stmt_init($db);
     if (!mysqli_stmt_prepare($stmt, $sql)) {
-        header("location: ../../registration.php?error=stmtfailed");
+        header("location: ../../register.php?error=stmtfailed");
         exit();
     }
 
@@ -80,7 +80,7 @@ function createUser($db, $username, $email, $password_1)
     mysqli_stmt_bind_param($stmt, "sss", $username, $hashedPass, $email);
     mysqli_stmt_execute($stmt);
     mysqli_stmt_close($stmt);
-    header("location: ../../registration.php?error=none");
+    header("location: ../../register.php?error=none");
     exit();
 }
 
