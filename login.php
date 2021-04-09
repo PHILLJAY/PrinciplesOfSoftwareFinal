@@ -44,7 +44,7 @@
             </form>
         </div>
         <div class="link">
-            <a href="login.php">Login</a> or <a href="home.html">Return home</a>
+            <a href="register.php">Register</a> or <a href="home.html">Return home</a>
         </div>
         <div class="error">
             <?php
