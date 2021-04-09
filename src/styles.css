@@ -142,3 +142,10 @@ body {
     color: #DF7932;
 }
 
+a{
+   color: #FFF4D4;
+}
+
+a:visited{
+    color:#FFF4D4;
+}

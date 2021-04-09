@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="src/Blackjack.css">
+  
+</head>
+
+<body style="background-color: grey;">
+  <div id="wrapper">
+      <div id="game">
+        <div id="alert" class="alert alert-error hide"><span></span></div>
+        <div id="dealer">
+          <div id="dhand"></div>
+        </div>
+        <div id="player">
+          <div id="phand"></div>
+        </div>
+        <div id="money">
+          <span id="cash">Cash: $<span></span></span>
+          <div id="bank">Winnings: $<span></span></div>
+        </div>
+      </div>
+      <div id="actions">
+        <button id="deal" class="btn">Deal!</button>
+        <button id="hit" class="btn" disabled>Hit</button>
+        <button id="stand" class="btn" disabled>Stand</button>
+        <button id="double" class="btn" disabled>Double Down</button>
+        <button id="split" class="btn" disabled>Split</button>
+        <button id="insurance" class="btn" disabled>Insurance</button>
+        <strong>Wager:</strong> $<input id="wager" class="input-small" type="text" style="width: 75px;"/>
+        <a href="index.html">Return home</a>
+      </div>
+    </div>
+    <div id="mymodel" class="model hide fade">
+      <div class="model-header">
+        <button type="button" class="close" data-dismiss="model" aria-hidden="true">&times;</button>
+        <h3>Out of cash!</h3>
+      </div>
+      <div class="model-body">
+        <p>You ran out of cash, but you spot an ATM nearby. Would you like to withdraw another $1,000 and try your luck again?</p>
+      </div>
+      <div class="model-footer">
+        <a href="#" id="cancel" class="btn">No!</a>
+        <a href="#" id="newGame" class="btn btn-primary">Yes!</a>
+      </div>
+
+    </div>
+  
+  </body>
+    <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+    <script type="text/javascript" src ="src/Blackjack.js"></script>
+</html>
